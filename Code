@@ -1,0 +1,30 @@
+#include <iostream>
+
+int main() {
+    int score;
+
+    // Ask the user for their test score
+    std::cout << "Enter your test score (0-100): ";
+    std::cin >> score;
+
+    // Check if score is in a valid range
+    if (score < 0 || score > 100) {
+        std::cout << "Invalid score. Please enter a value between 0 and 100.\n";
+        return 1; // Exit the program early
+    }
+
+    // Determine the letter grade
+    if (score >= 90) {
+        std::cout << "You got an A. Excellent work!\n";
+    } else if (score >= 80) {
+        std::cout << "You got a B. Great job!\n";
+    } else if (score >= 70) {
+        std::cout << "You got a C. You passed.\n";
+    } else if (score >= 60) {
+        std::cout << "You got a D. You might need to review.\n";
+    } else {
+        std::cout << "You got an F. Better luck next time.\n";
+    }
+
+  
+}

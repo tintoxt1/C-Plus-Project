@@ -26,5 +26,5 @@ int main() {
         std::cout << "You got an F. Better luck next time.\n";
     }
 
-  
+   return:0;
 }
